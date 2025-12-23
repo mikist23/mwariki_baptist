@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small custom utilities to match original file */
+
+.scrolled {
+  @apply bg-white shadow-md;
+}
+
+.slide {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.slide .slide-content{
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 1s ease-out 0.5s;
+}
+.slide.active .slide-content{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.gallery-overlay {
+  background: rgba(245, 158, 11, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery-item:hover .gallery-overlay{ opacity: 1 }
+.gallery-item img{ transition: transform .5s }
+.gallery-item:hover img{ transform: scale(1.05) }
