@@ -6,7 +6,9 @@ const slides = [
     title: 'Following Jesus wherever we are',
     subtitle: 'Welcome to Christian Church',
     text: "God loves us all. Join us in worship and fellowship.",
-    img: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    img: "/images/church image 1.jpg"
+
+,
     cta: {text: 'Be Part of Us', href: '#contact', primary:true}
   },
   {
@@ -22,7 +24,7 @@ const slides = [
     title: 'Experience the Power of Prayer',
     subtitle: 'Living in Faith',
     text: "Faith is taking the first step even when you don't see the whole staircase.",
-    img: 'https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    img: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1950&q=80',
     cta: {text: 'Watch Sermons', href: '#sermons', primary:true}
   }
 ]

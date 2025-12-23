@@ -37,7 +37,7 @@ export default function About(){
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative group">
-            <img src="https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Worship" className="rounded-lg shadow-xl w-full h-96 object-cover transform transition group-hover:scale-[1.02] duration-500" />
+            <img src="/images/church image 1.jpg" alt="Worship" className="rounded-lg shadow-xl w-full h-96 object-cover transform transition group-hover:scale-[1.02] duration-500" />
             <div className="absolute -bottom-6 -right-6 bg-primary p-8 rounded-lg hidden md:block shadow-lg">
               <p className="text-white font-serif text-xl italic">"For God so loved the world..."</p>
             </div>
