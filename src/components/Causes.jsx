@@ -5,9 +5,9 @@ const causes = [
   // {title:'Health Care, Food', raised:'$25,000', goal:'$50,000', pct:40, img:'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
   // {title:'Restore Old Church', raised:'$75,000', goal:'$100,000', pct:75, img:'https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
   // {title:'Save Children', raised:'$4,000', goal:'$20,000', pct:20, img:'https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
-  {title:'Mission', raised:'$25,000', goal:'$50,000', pct:40, img: "/images/church image 1.jpg"},
-  {title:'Church Instruments', raised:'$75,000', goal:'$100,000', pct:75, img:"/images/church image 1.jpg"},
-  {title:'Save Children', raised:'$4,000', goal:'$20,000', pct:20, img:"/images/church image 1.jpg"},
+  {title:'Mission', raised:'$25,000', goal:'$50,000', pct:40, img: "/images/church image 1.jpg", description: "Join us in our mission to reach the unreached. Your support helps deploy missionaries, build community centers, and provide clean water and medical aid to those in desperate need. Together, we can share the love of Christ and make a tangible difference."},
+  {title:'Church Instruments', raised:'$75,000', goal:'$100,000', pct:75, img:"/images/church image 1.jpg", description: "Worship is the heart of our gathering. We are raising funds to acquire high-quality musical instruments and sound equipment to elevate our praise and worship experience. Help us make a joyful noise unto the Lord!"},
+  {title:'Save Children', raised:'$4,000', goal:'$20,000', pct:20, img:"/images/church image 1.jpg", description: "Every child deserves a future. This fund supports feeding programs, school fees, and medical care for vulnerable children in our community. Your donation provides hope, health, and opportunity to the next generation."},
 ]
 
 export default function Causes(){
@@ -31,7 +31,7 @@ export default function Causes(){
                   <span>Raised: <span className="text-primary">{c.raised}</span></span>
                   <span>Goal: <span className="text-gray-900">{c.goal}</span></span>
                 </div>
-                <Link to="/donate" className="block text-center w-full border-2 border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition uppercase text-sm tracking-wide">Donate Now</Link>
+                <Link to="/donate" state={{ cause: c }} className="block text-center w-full border-2 border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition uppercase text-sm tracking-wide">Donate Now</Link>
               </div>
             </div>
           ))}

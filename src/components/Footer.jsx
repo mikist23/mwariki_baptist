@@ -18,10 +18,11 @@ export default function Footer(){
           <div>
             <h4 className="text-white text-lg font-bold mb-6 font-serif">Quick Links</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> About Us</a></li>
-              <li><a href="#" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> Sermons</a></li>
-              <li><a href="#" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> Events</a></li>
-              <li><a href="#" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> Contact</a></li>
+              <li><a href="/#about" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> About Us</a></li>
+              <li><a href="/#sermons" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> Sermons</a></li>
+              <li><a href="/#events" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> Events</a></li>
+              <li><a href="/donate" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> Donate Now</a></li>
+              <li><a href="/#contact" className="hover:text-primary transition flex items-center"><i className="fas fa-chevron-right text-xs mr-2"></i> Contact</a></li>
             </ul>
           </div>
 
