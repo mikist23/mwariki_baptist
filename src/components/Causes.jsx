@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const causes = [
   // {title:'Health Care, Food', raised:'$25,000', goal:'$50,000', pct:40, img:'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
@@ -30,7 +31,7 @@ export default function Causes(){
                   <span>Raised: <span className="text-primary">{c.raised}</span></span>
                   <span>Goal: <span className="text-gray-900">{c.goal}</span></span>
                 </div>
-                <button className="w-full border-2 border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition uppercase text-sm tracking-wide">Donate Now</button>
+                <Link to="/donate" className="block text-center w-full border-2 border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition uppercase text-sm tracking-wide">Donate Now</Link>
               </div>
             </div>
           ))}
