@@ -1,9 +1,12 @@
 import React from 'react'
 
 const posts = [
-  {title:'Why Faith Generation is Key', img:'https://images.unsplash.com/photo-1515162305285-0293e4767cc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', date:'June 04'},
-  {title:'The Importance of Service', img:'https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', date:'May 12'},
-  {title:'Studying the Bible Effectively', img:'https://images.unsplash.com/photo-1445053023192-8d45cb66099d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', date:'April 28'},
+  // {title:'Why Faith Generation is Key', img:'https://images.unsplash.com/photo-1515162305285-0293e4767cc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', date:'June 04'},
+  // {title:'The Importance of Service', img:'https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', date:'May 12'},
+  // {title:'Studying the Bible Effectively', img:'https://images.unsplash.com/photo-1445053023192-8d45cb66099d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80', date:'April 28'},
+  {title:'Why Faith Generation is Key', img:"/images/church image 1.jpg", date:'June 04'},
+  {title:'The Importance of Service', img:"/images/church image 1.jpg", date:'May 12'},
+  {title:'Studying the Bible Effectively', img:"/images/church image 1.jpg", date:'April 28'},
 ]
 
 export default function Blog(){

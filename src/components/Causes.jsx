@@ -1,9 +1,12 @@
 import React from 'react'
 
 const causes = [
-  {title:'Health Care, Food', raised:'$25,000', goal:'$50,000', pct:40, img:'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
-  {title:'Restore Old Church', raised:'$75,000', goal:'$100,000', pct:75, img:'https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
-  {title:'Save Children', raised:'$4,000', goal:'$20,000', pct:20, img:'https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
+  // {title:'Health Care, Food', raised:'$25,000', goal:'$50,000', pct:40, img:'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
+  // {title:'Restore Old Church', raised:'$75,000', goal:'$100,000', pct:75, img:'https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
+  // {title:'Save Children', raised:'$4,000', goal:'$20,000', pct:20, img:'https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
+  {title:'Mission', raised:'$25,000', goal:'$50,000', pct:40, img: "/images/church image 1.jpg"},
+  {title:'Church Instruments', raised:'$75,000', goal:'$100,000', pct:75, img:"/images/church image 1.jpg"},
+  {title:'Save Children', raised:'$4,000', goal:'$20,000', pct:20, img:"/images/church image 1.jpg"},
 ]
 
 export default function Causes(){

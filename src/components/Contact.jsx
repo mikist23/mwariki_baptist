@@ -6,7 +6,7 @@ export default function Contact(){
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-2">Contact</h2>
-          <h3 className="text-4xl font-serif font-bold text-gray-900">Get In Touch</h3>
+          <h3 className="text-4xl font-serif font-bold text-gray-900">Prayer Request</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="bg-white p-10 rounded-lg shadow-sm">
@@ -18,7 +18,7 @@ export default function Contact(){
               </div>
               <div className="flex items-start">
                 <i className="fas fa-phone text-primary mt-1 mr-4 text-xl"></i>
-                <p className="text-gray-600 font-medium">+ 1235 2355 98</p>
+                <p className="text-gray-600 font-medium">+</p>
               </div>
               <div className="flex items-start">
                 <i className="fas fa-envelope text-primary mt-1 mr-4 text-xl"></i>

@@ -1,14 +1,22 @@
 import React from 'react'
 
 const imgs = [
-  'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1507692049790-de58293a4653?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1601142634808-38923eb7c560?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  // 'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  // 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  // 'https://images.unsplash.com/photo-1507692049790-de58293a4653?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  // 'https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  // 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  // 'https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  // 'https://images.unsplash.com/photo-1601142634808-38923eb7c560?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  // 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  "/images/church image 1.jpg",
+  "/images/church image 1.jpg",
+  "/images/church image 1.jpg",
+  "/images/church image 1.jpg",
+  "/images/church image 1.jpg",
+  "/images/church image 1.jpg",
+  "/images/church image 1.jpg",
+  "/images/church image 1.jpg"
 ]
 
 export default function Gallery(){

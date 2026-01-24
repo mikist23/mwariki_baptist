@@ -11,37 +11,42 @@ const items = [
   {
     date: "July 01, 2019",
     title: "Developing Spiritual Mentality",
-    pastor: "Jerry Simeon",
+    pastor: "Majimbo Absai",
     img:
-      "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      //"https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "/images/sermon 1.jpeg",
   },
   {
     date: "July 01, 2019",
     title: "Let the Bible Motivate You",
-    pastor: "Jerry Simeon",
+    pastor: "Majimbo Absai",
     img:
-      "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      //"https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "/images/sermon 1.jpeg",
   },
   {
     date: "July 01, 2019",
     title: "Let the Sunset Inspire You",
-    pastor: "Jerry Simeon",
+    pastor: "Majimbo Absai",
     img:
-      "https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      //"https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "/images/sermon 1.jpeg",
   },
   {
     date: "July 01, 2019",
     title: "Developing Spiritual Mentality",
-    pastor: "Jerry Simeon",
+    pastor: "Majimbo Absai",
     img:
-      "https://images.unsplash.com/photo-1601142634808-38923eb7c560?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      //"https://images.unsplash.com/photo-1601142634808-38923eb7c560?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "/images/sermon 1.jpeg",
   },
   {
     date: "July 01, 2019",
     title: "Let the Bible Motivate You",
-    pastor: "Jerry Simeon",
+    pastor: "Majimbo Absai",
     img:
-      "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      //"https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "/images/sermon 1.jpeg",
   },
 ];
 
@@ -58,7 +63,7 @@ export default function Sermons() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-3">
-            Christian Church Sermons
+            Mwariki Baptist
           </h2>
 
           <p className="text-sm text-gray-500 max-w-2xl mx-auto">

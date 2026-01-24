@@ -4,7 +4,7 @@ export default function Services(){
   const cards = [
     {icon: 'fa-praying-hands', title: 'Daily Prayers', text: 'Join us for morning devotionals and evening prayer sessions.'},
     {icon: 'fa-bible', title: 'Continuous Teaching', text: 'Deep dive into scripture with our weekly bible study groups.'},
-    {icon: 'fa-hand-holding-heart', title: 'Community Helpers', text: 'Join our outreach programs to help those in need.'},
+    {icon: 'fa-hand-holding-heart', title: 'Bible Study', text: 'Join our outreach programs to help those in need.'},
   ]
 
   return (
