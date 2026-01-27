@@ -8,7 +8,7 @@ const events = [
     title:'Christmas Eve Candlelight Service', 
     place:'Main Sanctuary',
     description: 'Celebrate the birth of our Savior with candlelight service, carols, and communion.',
-    image: 'https://images.unsplash.com/photo-1577684210294-55b3b0050a7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    image: '/images/church image 1.jpg'
   },
   {
     day:31, 
@@ -17,7 +17,7 @@ const events = [
     title:"New Year's Eve Service", 
     place:'Main Sanctuary',
     description: 'Join us for a night of prayer, reflection, and celebration as we welcome the new year in God\'s presence.',
-    image: 'https://images.unsplash.com/photo-15174562653439-34a37ab0ad3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    image: 'https://picsum.photos/seed/church-new-year/800/600.jpg'
   },
   {
     day:7, 
@@ -26,7 +26,7 @@ const events = [
     title:'Baptism Sunday', 
     place:'Main Sanctuary',
     description: 'Special service for those wishing to be baptized and celebrate their faith journey with our church family.',
-    image: 'https://images.unsplash.com/photo-1533174072540-c8e1c4ea9c3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    image: '/images/sermon 1.jpeg'
   },
   {
     day:14, 
@@ -35,7 +35,7 @@ const events = [
     title:'Community Prayer Fellowship', 
     place:'Fellowship Hall',
     description: 'Monthly gathering for prayer, testimony sharing, and spiritual fellowship with our church community.',
-    image: 'https://images.unsplash.com/photo-1529156069898-49913503b48d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    image: 'https://picsum.photos/seed/church-fellowship/800/600.jpg'
   }
 ]
 
