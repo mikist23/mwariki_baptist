@@ -20,12 +20,13 @@ export default function Home(){
         <About />
         <Services />
         <Sermons />
+        
         <section
         className="relative py-32 bg-fixed bg-cover bg-center flex items-center justify-center text-center"
         style={{
           backgroundImage:
              "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
-            
+             
         }}
       >
         <div className="container mx-auto px-6 relative z-10">

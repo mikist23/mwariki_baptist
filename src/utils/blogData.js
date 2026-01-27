@@ -9,7 +9,7 @@ export const blogPosts = [
     content: `
       <p>Faith is the foundation of our spiritual journey. In this generation, where challenges are multidimensional, having a solid grounding in faith is more important than ever. We must understand that faith is not just a destination but a continuous walk with God.</p>
       <p>Building a generation of faith requires intentionality. It starts within our families, extends to our communities, and ultimately transforms the world. When we talk about "Faith Generation," we refer to the transmission of values, core beliefs, and the living experience of God's presence from one heart to another.</p>
-      <p>The scriptures remind us that faith comes by hearing, and hearing by the word of God. However, in today’s world, "hearing" isn't just about sound; it's about seeing faith in action. It's about witnessing grace in the midst of trials and love in the face of hatred.</p>
+      <p>The scriptures remind us that faith comes by hearing, and hearing by the word of God. However, in today's world, "hearing" isn't just about sound; it's about seeing faith in action. It's about witnessing grace in the midst of trials and love in the face of hatred.</p>
     `,
     mainImg: "/images/church image 1.jpg",
     gallery: [
@@ -32,7 +32,7 @@ export const blogPosts = [
     content: `
       <p>Service is the heartbeat of the Christian life. Jesus Himself said that He came not to be served, but to serve. When we dedicate our time and resources to help others, we are reflecting the character of Christ.</p>
       <p>Often, we think of service as grand gestures, but it is often found in the quiet, consistent acts of kindness. A word of encouragement, a meal shared, or a listening ear can make a world of difference to someone in need.</p>
-      <p>In our community at Mwariki Baptist, we emphasize "Service as Worship." Every hand that helps is a hand that heals. Whether you are serving in the choir, the kitchen, or the community outreach programs, your contribution is invaluable to the kingdom of God.</p>
+      <p>In our community at Mwariki Baptist, we emphasize "Service as Worship." Every hand that helps is a hand that heals. Whether you are serving in the choir, kitchen, or community outreach programs, your contribution is invaluable to the kingdom of God.</p>
     `,
     mainImg: "/images/church image 1.jpg",
     gallery: [
@@ -63,7 +63,7 @@ export const blogPosts = [
     ],
     likes: 42,
     comments: [
-      { user: 'Lucy N.', text: 'I love the tip about starting with prayer.', date: 'April 29, 2025' },
+      { user: 'Lucy N.', text: 'I love to tip about starting with prayer.', date: 'April 29, 2025' },
       { user: 'Robert T.', text: 'Can wait for the next group session!', date: 'April 30, 2025' }
     ]
   }
