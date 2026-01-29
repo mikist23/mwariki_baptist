@@ -30,14 +30,82 @@
   opacity: 1;
 }
 
+/* Enhanced Gallery Styles */
 .gallery-overlay {
-  background: rgba(245, 158, 11, 0.9);
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 .gallery-item:hover .gallery-overlay{ opacity: 1 }
-.gallery-item img{ transition: transform .5s }
+.gallery-item img{ transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) }
 .gallery-item:hover img{ transform: scale(1.05) }
+
+/* Lightbox Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lightbox-enter {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.lightbox-controls {
+  animation: slideInUp 0.4s ease-out;
+}
+
+/* Custom scrollbar for thumbnails */
+.gallery-thumbnails::-webkit-scrollbar {
+  height: 4px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Zoom cursor styles */
+.zoom-cursor {
+  cursor: zoom-in;
+}
+
+.zoomed-cursor {
+  cursor: zoom-out;
+}
+
+/* Category button animations */
+.category-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Smooth image transitions */
+.image-transition {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Line clamp utilities */
 .line-clamp-2 {
