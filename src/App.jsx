@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import DonatePage from './pages/DonatePage'
 import BlogPage from './pages/BlogPage'
 import ServicePage from './pages/ServicePage'
+import SermonPage from './pages/SermonPage'
 import ScrollToTop from './components/ScrollToTop'
 
 export default function App(){
@@ -15,6 +16,7 @@ export default function App(){
         <Route path="/donate" element={<DonatePage />} />
         <Route path="/blog/:slug" element={<BlogPage />} />
         <Route path="/services/:id" element={<ServicePage />} />
+        <Route path="/sermons/:id" element={<SermonPage />} />
       </Routes>
     </BrowserRouter>
   )
