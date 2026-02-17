@@ -122,8 +122,8 @@ export default function Events() {
             <i className="fas fa-calendar-days text-[10px]" aria-hidden="true"></i>
             Upcoming Events
           </span>
-          <h2 className="section-title mt-5">Events Layout Studio</h2>
-          <p className="section-subtitle">A clear event board with one banner, one primary card, and two stacked schedule cards.</p>
+          <h2 className="section-title mt-5">Next on the Church Calendar</h2>
+          <p className="section-subtitle">From worship to outreach, keep up with every upcoming event.</p>
         </div>
 
         <div className="max-w-6xl mx-auto space-y-6">

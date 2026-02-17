@@ -7,7 +7,7 @@ const causes = [
     raised: '$25,000',
     goal: '$50,000',
     pct: 40,
-    img: '/images/church image 1.jpg',
+    img: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80',
     description:
       'Support church planting, discipleship materials, and frontline outreach in underserved communities.',
   },
@@ -16,7 +16,7 @@ const causes = [
     raised: '$75,000',
     goal: '$100,000',
     pct: 75,
-    img: '/images/church image 1.jpg',
+    img: 'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1200&q=80',
     description:
       'Fund reliable instruments, media tools, and sound infrastructure that strengthen gathered worship.',
   },
@@ -25,7 +25,7 @@ const causes = [
     raised: '$4,000',
     goal: '$20,000',
     pct: 20,
-    img: '/images/church image 1.jpg',
+    img: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?auto=format&fit=crop&w=1200&q=80',
     description:
       'Provide school support, meals, and practical care for vulnerable children and families.',
   },

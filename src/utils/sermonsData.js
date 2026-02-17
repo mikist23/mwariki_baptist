@@ -37,7 +37,7 @@ export const sermons = [
     title: 'Grace and Truth',
     pastor: 'Majimbo Absai',
     summary: 'How mercy and truth walk together in the life of the believer.',
-    img: 'https://images.unsplash.com/photo-1490127252417-7c393f9f832f?auto=format&fit=crop&w=1200&q=80',
+    img: 'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1200&q=80',
   },
   {
     id: 'steadfast-joy',

@@ -11,10 +11,10 @@ export const blogPosts = [
       <p>Building a generation of faith requires intentionality. It starts within our families, extends to our communities, and ultimately transforms the world. When we talk about "Faith Generation," we refer to the transmission of values, core beliefs, and the living experience of God's presence from one heart to another.</p>
       <p>The scriptures remind us that faith comes by hearing, and hearing by the word of God. However, in today's world, "hearing" isn't just about sound; it's about seeing faith in action. It's about witnessing grace in the midst of trials and love in the face of hatred.</p>
     `,
-    mainImg: "/images/church image 1.jpg",
+    mainImg: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "/images/church image 1.jpg",
-      "/images/sermon 1.jpeg"
+      "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=900&q=80"
     ],
     likes: 24,
     comments: [
@@ -34,10 +34,10 @@ export const blogPosts = [
       <p>Often, we think of service as grand gestures, but it is often found in the quiet, consistent acts of kindness. A word of encouragement, a meal shared, or a listening ear can make a world of difference to someone in need.</p>
       <p>In our community at Mwariki Baptist, we emphasize "Service as Worship." Every hand that helps is a hand that heals. Whether you are serving in the choir, kitchen, or community outreach programs, your contribution is invaluable to the kingdom of God.</p>
     `,
-    mainImg: "/images/church image 1.jpg",
+    mainImg: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "/images/church image 1.jpg",
-      "/images/sermon 1.jpeg"
+      "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=80"
     ],
     likes: 18,
     comments: [
@@ -56,10 +56,10 @@ export const blogPosts = [
       <p>We recommend starting with prayer. Ask God to open your eyes to the wonders of His Law. Use cross-references, commentaries, and historical context to gain a deeper perspective. Most importantly, ask "How does this apply to my life today?"</p>
       <p>Scripture is alive and active. As we hide the Word in our hearts, it becomes a lamp to our feet and a light to our path. Join our weekly Bible Study groups to learn more and grow together in understanding.</p>
     `,
-    mainImg: "/images/church image 1.jpg",
+    mainImg: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "/images/church image 1.jpg",
-      "/images/sermon 1.jpeg"
+      "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1601142634808-38923eb7c560?auto=format&fit=crop&w=900&q=80"
     ],
     likes: 42,
     comments: [
