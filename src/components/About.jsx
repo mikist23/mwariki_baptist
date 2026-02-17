@@ -23,13 +23,6 @@ const coreBeliefs = [
   },
 ]
 
-const aboutStats = [
-  { value: '5', label: 'Weekly Prayer Meetings' },
-  { value: '8', label: 'Discipleship Groups' },
-  { value: '320+', label: 'Bible Study Participation' },
-  { value: '60+', label: 'Ministry Volunteers' },
-]
-
 export default function About() {
   return (
     <section id="about" className="section-shell bg-surface scroll-mt-24">
@@ -93,14 +86,6 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {aboutStats.map((stat) => (
-            <article key={stat.label} className="card-elevated p-5 text-center">
-              <p className="font-serif text-3xl text-ink font-bold leading-none">{stat.value}</p>
-              <p className="text-[11px] uppercase tracking-widest text-slate-500 mt-2 leading-tight">{stat.label}</p>
-            </article>
-          ))}
-        </div>
       </div>
     </section>
   )
