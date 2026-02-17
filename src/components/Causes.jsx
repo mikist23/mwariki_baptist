@@ -2,38 +2,67 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const causes = [
-  // {title:'Health Care, Food', raised:'$25,000', goal:'$50,000', pct:40, img:'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
-  // {title:'Restore Old Church', raised:'$75,000', goal:'$100,000', pct:75, img:'https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
-  // {title:'Save Children', raised:'$4,000', goal:'$20,000', pct:20, img:'https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'},
-  {title:'Mission', raised:'$25,000', goal:'$50,000', pct:40, img: "/images/church image 1.jpg", description: "Join us in our mission to reach the unreached. Your support helps deploy missionaries, build community centers, and provide clean water and medical aid to those in desperate need. Together, we can share the love of Christ and make a tangible difference."},
-  {title:'Church Instruments', raised:'$75,000', goal:'$100,000', pct:75, img:"/images/church image 1.jpg", description: "Worship is the heart of our gathering. We are raising funds to acquire high-quality musical instruments and sound equipment to elevate our praise and worship experience. Help us make a joyful noise unto the Lord!"},
-  {title:'Save Children', raised:'$4,000', goal:'$20,000', pct:20, img:"/images/church image 1.jpg", description: "Every child deserves a future. This fund supports feeding programs, school fees, and medical care for vulnerable children in our community. Your donation provides hope, health, and opportunity to the next generation."},
+  {
+    title: 'Mission Expansion',
+    raised: '$25,000',
+    goal: '$50,000',
+    pct: 40,
+    img: '/images/church image 1.jpg',
+    description:
+      'Support church planting, discipleship materials, and frontline outreach in underserved communities.',
+  },
+  {
+    title: 'Worship and Media Upgrade',
+    raised: '$75,000',
+    goal: '$100,000',
+    pct: 75,
+    img: '/images/church image 1.jpg',
+    description:
+      'Fund reliable instruments, media tools, and sound infrastructure that strengthen gathered worship.',
+  },
+  {
+    title: 'Children and Family Care',
+    raised: '$4,000',
+    goal: '$20,000',
+    pct: 20,
+    img: '/images/church image 1.jpg',
+    description:
+      'Provide school support, meals, and practical care for vulnerable children and families.',
+  },
 ]
 
-export default function Causes(){
+export default function Causes() {
   return (
-    <section id="causes" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-2">Donate Charity</h2>
-          <h3 className="text-4xl font-serif font-bold text-gray-900">Causes Needs Our Help</h3>
+    <section id="causes" className="section-shell bg-surface">
+      <div className="section-wrap">
+        <div className="section-head">
+          <span className="kicker">
+            <i className="fas fa-hand-holding-heart text-[10px]" aria-hidden="true"></i>
+            Give with Purpose
+          </span>
+          <h2 className="section-title mt-5">Causes That Need Strategic Support</h2>
+          <p className="section-subtitle">Every contribution is directed toward measurable ministry outcomes.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {causes.map(c=> (
-            <div key={c.title} className="bg-white rounded-lg shadow-sm overflow-hidden border">
-              <img src={c.img} className="w-full h-48 object-cover" />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {causes.map((cause) => (
+            <article key={cause.title} className="card-elevated overflow-hidden">
+              <img src={cause.img} alt={cause.title} className="w-full h-52 object-cover" loading="lazy" />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 font-serif">{c.title}</h3>
-                <div className="relative w-full bg-gray-200 h-2 rounded-full mb-4">
-                  <div className="absolute top-0 left-0 bg-primary h-2 rounded-full" style={{width: `${c.pct}%`}}></div>
+                <h3 className="font-serif text-2xl text-ink font-bold">{cause.title}</h3>
+                <p className="text-sm text-muted mt-3 leading-relaxed">{cause.description}</p>
+                <div className="mt-5 h-2 bg-slate-200 rounded-full overflow-hidden">
+                  <div className="h-full bg-primary" style={{ width: `${cause.pct}%` }}></div>
                 </div>
-                <div className="flex justify-between text-xs text-gray-500 mb-6 font-bold uppercase">
-                  <span>Raised: <span className="text-primary">{c.raised}</span></span>
-                  <span>Goal: <span className="text-gray-900">{c.goal}</span></span>
+                <div className="mt-3 flex justify-between text-xs uppercase tracking-wider text-slate-500">
+                  <span>Raised: <strong className="text-primary">{cause.raised}</strong></span>
+                  <span>Goal: <strong className="text-ink">{cause.goal}</strong></span>
                 </div>
-                <Link to="/donate" state={{ cause: c }} className="block text-center w-full border-2 border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition uppercase text-sm tracking-wide">Donate Now</Link>
+                <Link to="/donate" state={{ cause }} className="btn-primary w-full mt-6">
+                  Donate Now
+                </Link>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

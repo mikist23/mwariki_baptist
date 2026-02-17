@@ -2,37 +2,39 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { blogPosts } from '../utils/blogData'
 
-export default function Blog(){
+export default function Blog() {
   return (
-    <section id="blog" className="py-24 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-2">Blog</h2>
-          <h3 className="text-4xl font-serif font-bold text-gray-900">Read the Latest Blog</h3>
+    <section id="blog" className="section-shell bg-surfaceAlt">
+      <div className="section-wrap">
+        <div className="section-head">
+          <span className="kicker">
+            <i className="fas fa-newspaper text-[10px]" aria-hidden="true"></i>
+            Insights and Updates
+          </span>
+          <h2 className="section-title mt-5">Latest Church Blog</h2>
+          <p className="section-subtitle">Reflections, discipleship resources, and ministry updates from our leadership team.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {blogPosts.map(p=> (
-            <div key={p.id} className="bg-white rounded-lg overflow-hidden shadow-sm group hover:shadow-xl transition-all">
-              <div className="relative overflow-hidden h-64">
-                <Link to={`/blog/${p.slug}`} state={{ post: p }}>
-                  <img src={p.mainImg} alt="Blog" className="w-full h-full object-cover transition transform group-hover:scale-110 duration-500" />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogPosts.map((post) => (
+            <article key={post.id} className="card-elevated overflow-hidden">
+              <Link to={`/blog/${post.slug}`} state={{ post }}>
+                <img src={post.mainImg} alt={post.title} className="w-full h-64 object-cover" loading="lazy" />
+              </Link>
+              <div className="p-6">
+                <p className="text-xs uppercase tracking-widest text-slate-500">{post.date}</p>
+                <Link to={`/blog/${post.slug}`} state={{ post }}>
+                  <h3 className="font-serif text-2xl font-bold text-ink mt-3 hover:text-primary">{post.title}</h3>
                 </Link>
-                <div className="absolute top-4 left-4 bg-primary text-white text-center px-3 py-1 rounded shadow-lg">
-                  <span className="block text-xl font-bold">{p.date.split(' ')[0]}</span>
-                  <span className="text-xs uppercase font-semibold">{p.date.split(' ')[1].replace(',', '')}</span>
+                <p className="text-sm text-muted mt-3 leading-relaxed">{post.summary}</p>
+                <div className="mt-6 flex items-center justify-between">
+                  <span className="text-xs text-slate-500">By {post.author}</span>
+                  <Link to={`/blog/${post.slug}`} state={{ post }} className="text-primary text-xs font-bold uppercase tracking-widest">
+                    Read More
+                  </Link>
                 </div>
               </div>
-              <div className="p-8">
-                <Link to={`/blog/${p.slug}`} state={{ post: p }}>
-                   <h4 className="text-xl font-bold mb-3 hover:text-primary transition cursor-pointer font-serif">{p.title}</h4>
-                </Link>
-                <p className="text-gray-500 text-sm mb-6 leading-relaxed">{p.summary}</p>
-                <div className="flex items-center justify-between border-t pt-4">
-                  <Link to={`/blog/${p.slug}`} state={{ post: p }} className="text-primary text-sm font-bold uppercase tracking-widest hover:text-gray-900 transition">Read More</Link>
-                  <span className="text-xs text-gray-400 font-semibold uppercase"><i className="fas fa-user-circle mr-1"></i> Admin</span>
-                </div>
-              </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
