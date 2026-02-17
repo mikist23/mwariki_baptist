@@ -2,39 +2,39 @@ import React from 'react'
 
 const events = [
   {
-    day: 24,
-    month: 'Dec',
-    time: '08:30 AM - 11:30 AM',
-    title: 'Christmas Eve Candlelight Service',
+    day: 23,
+    month: 'Feb',
+    time: '09:00 AM - 11:30 AM',
+    title: 'Sunday Worship and Vision Gathering',
     place: 'Main Sanctuary',
-    description: 'Celebrate the birth of Christ with worship, carols, and communion.',
+    description: 'Worship together as we share ministry vision, testimonies, and prayer for the season ahead.',
     image: '/images/church image 1.jpg',
   },
   {
-    day: 31,
-    month: 'Dec',
-    time: '10:00 PM - 12:00 AM',
-    title: "New Year's Eve Prayer Service",
-    place: 'Main Sanctuary',
-    description: 'A night of prayer, reflection, and thanksgiving as we enter the new year.',
+    day: 8,
+    month: 'Mar',
+    time: '06:30 PM - 08:30 PM',
+    title: 'Family Prayer Night',
+    place: 'Fellowship Hall',
+    description: 'An evening of prayer, scripture reflection, and encouragement for families and caregivers.',
     image: 'https://images.unsplash.com/photo-1601142634808-38923eb7c560?auto=format&fit=crop&w=1000&q=80',
   },
   {
-    day: 7,
-    month: 'Jan',
-    time: '09:00 AM - 11:00 AM',
-    title: 'Baptism Sunday',
+    day: 12,
+    month: 'Apr',
+    time: '10:00 AM - 12:00 PM',
+    title: 'Baptism and Testimony Service',
     place: 'Main Sanctuary',
-    description: 'Celebrate faith milestones with our church family.',
+    description: 'Celebrate new life in Christ as candidates share testimonies and receive baptism.',
     image: '/images/sermon 1.jpeg',
   },
   {
-    day: 14,
-    month: 'Jan',
-    time: '06:30 PM - 08:00 PM',
-    title: 'Community Prayer Fellowship',
-    place: 'Fellowship Hall',
-    description: 'Monthly gathering for prayer, testimony sharing, and spiritual fellowship with our church community.',
+    day: 17,
+    month: 'May',
+    time: '11:00 AM - 02:00 PM',
+    title: 'Community Fellowship Day',
+    place: 'Church Grounds',
+    description: 'A churchwide fellowship day with outreach stories, food sharing, and community connection.',
     image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1000&q=80',
   },
 ]
@@ -56,7 +56,7 @@ export default function Events() {
 
         <div className="max-w-6xl mx-auto">
           <article className="card-elevated overflow-hidden mb-10">
-            <div className="relative min-h-[190px] md:min-h-[220px]">
+            <div className="relative min-h-[180px] md:min-h-[210px]">
               <img src={featured.image} alt={featured.title} className="w-full h-full object-cover" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-black/10"></div>
               <div className="absolute top-3 left-3">
@@ -86,9 +86,9 @@ export default function Events() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {others.map((event) => (
-              <article key={event.title} className="card-elevated overflow-hidden">
+              <article key={event.title} className="card-elevated overflow-hidden h-full">
                 <img src={event.image} alt={event.title} className="w-full h-56 object-cover" loading="lazy" />
-                <div className="p-6">
+                <div className="p-6 flex flex-col h-full">
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <p className="text-xs uppercase tracking-widest text-slate-500">{event.time}</p>
@@ -99,12 +99,12 @@ export default function Events() {
                       <span>{event.month}</span>
                     </div>
                   </div>
-                  <p className="text-sm text-muted mt-3 leading-relaxed">{event.description}</p>
-                  <p className="text-sm text-slate-600 mt-4">
+                  <p className="text-sm text-muted mt-3 leading-relaxed min-h-[72px]">{event.description}</p>
+                  <p className="text-sm text-slate-600 mt-4 min-h-[20px]">
                     <i className="fas fa-location-dot text-primary mr-2" aria-hidden="true"></i>
                     {event.place}
                   </p>
-                  <button type="button" className="btn-secondary w-full mt-6">
+                  <button type="button" className="btn-secondary w-full mt-auto">
                     Reserve a Spot
                   </button>
                 </div>
