@@ -5,7 +5,7 @@ export const sermons = [
     title: 'Let the Sunset Inspire You',
     pastor: 'Majimbo Absai',
     summary: 'A reflective message on hope, renewal, and God’s daily mercies.',
-    img: '/images/sermon 1.jpeg',
+    img: 'https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80',
   },
   {
     id: 'spiritual-mentality',
@@ -13,7 +13,7 @@ export const sermons = [
     title: 'Developing Spiritual Mentality',
     pastor: 'Majimbo Absai',
     summary: 'Growing a Christ-centered mindset through Scripture and prayer.',
-    img: '/images/sermon 1.jpeg',
+    img: 'https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?auto=format&fit=crop&w=1200&q=80',
   },
   {
     id: 'bible-motivate',
@@ -21,7 +21,7 @@ export const sermons = [
     title: 'Let the Bible Motivate You',
     pastor: 'Majimbo Absai',
     summary: 'Practical encouragement for living out the Word in everyday life.',
-    img: '/images/sermon 1.jpeg',
+    img: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1200&q=80',
   },
   {
     id: 'faith-in-trials',
@@ -29,7 +29,7 @@ export const sermons = [
     title: 'Faith in the Fire',
     pastor: 'Majimbo Absai',
     summary: 'Trusting God through seasons of testing and uncertainty.',
-    img: '/images/sermon 1.jpeg',
+    img: 'https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1200&q=80',
   },
   {
     id: 'grace-and-truth',
@@ -37,7 +37,7 @@ export const sermons = [
     title: 'Grace and Truth',
     pastor: 'Majimbo Absai',
     summary: 'How mercy and truth walk together in the life of the believer.',
-    img: '/images/sermon 1.jpeg',
+    img: 'https://images.unsplash.com/photo-1490127252417-7c393f9f832f?auto=format&fit=crop&w=1200&q=80',
   },
   {
     id: 'steadfast-joy',
@@ -45,7 +45,7 @@ export const sermons = [
     title: 'Steadfast Joy',
     pastor: 'Majimbo Absai',
     summary: 'Finding lasting joy in Christ beyond circumstances.',
-    img: '/images/sermon 1.jpeg',
+    img: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80',
   },
 ]
 

@@ -1,12 +1,15 @@
 import React, { useEffect, useMemo, useState } from 'react'
 
 const galleryImages = [
-  { id: 1, src: '/images/church image 1.jpg', category: 'services', title: 'Sunday Worship', description: 'Weekly gathered worship and teaching' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=900&q=80', category: 'events', title: 'Community Event', description: 'Church family fellowship day' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?auto=format&fit=crop&w=900&q=80', category: 'community', title: 'Youth Ministry', description: 'Mentoring and discipleship moments' },
-  { id: 4, src: '/images/sermon 1.jpeg', category: 'services', title: 'Sermon Moment', description: 'Sunday preaching series' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=900&q=80', category: 'events', title: 'Prayer Gathering', description: 'United prayer and worship' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80', category: 'community', title: 'Outreach Day', description: 'Serving local families' },
+  { id: 1, src: 'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=900&q=80', category: 'services', title: 'Sunday Worship Service', description: 'Weekly congregational worship and Scripture teaching.' },
+  { id: 2, src: 'https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=900&q=80', category: 'services', title: 'Biblical Preaching', description: 'Faithful preaching centered on the Word of God.' },
+  { id: 3, src: 'https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?auto=format&fit=crop&w=900&q=80', category: 'services', title: 'Prayer and Worship', description: 'Corporate prayer and worship in one accord.' },
+  { id: 4, src: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=900&q=80', category: 'events', title: 'Youth Discipleship Forum', description: 'Interactive discipleship sessions for young believers.' },
+  { id: 5, src: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=80', category: 'events', title: 'Church Fellowship Lunch', description: 'Shared meals, testimonies, and meaningful fellowship.' },
+  { id: 6, src: 'https://images.unsplash.com/photo-1601142634808-38923eb7c560?auto=format&fit=crop&w=900&q=80', category: 'events', title: 'Prayer Vigil Night', description: 'Evening gathering for intercession and renewal.' },
+  { id: 7, src: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?auto=format&fit=crop&w=900&q=80', category: 'community', title: 'Youth Mentorship', description: 'Guiding youth through biblical growth and support.' },
+  { id: 8, src: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80', category: 'community', title: 'Community Outreach', description: 'Serving local families with practical love and care.' },
+  { id: 9, src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80', category: 'community', title: 'Neighborhood Mission Day', description: 'Church members sharing hope through local outreach.' },
 ]
 
 const categories = [
