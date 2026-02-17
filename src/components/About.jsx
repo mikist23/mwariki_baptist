@@ -1,11 +1,33 @@
 import React from 'react'
-import { leadershipHighlights } from '../utils/siteContent'
+
+const coreBeliefs = [
+  {
+    title: 'Scripture as Final Authority',
+    text: 'We believe the Bible is the inspired Word of God and our final guide for faith, doctrine, and daily living.',
+    icon: 'fa-book-bible',
+  },
+  {
+    title: 'Salvation Through Christ Alone',
+    text: 'We proclaim salvation by grace through faith in Jesus Christ, whose death and resurrection reconcile us to God.',
+    icon: 'fa-cross',
+  },
+  {
+    title: 'Prayer and Worship',
+    text: 'We seek God through reverent worship and persistent prayer, depending on the Holy Spirit in all ministry.',
+    icon: 'fa-hands-praying',
+  },
+  {
+    title: 'Discipleship and Holy Living',
+    text: 'We are committed to forming mature disciples who obey Christ, serve others, and reflect godly character.',
+    icon: 'fa-people-group',
+  },
+]
 
 const aboutStats = [
-  { value: '2,500+', label: 'People Reached Yearly' },
-  { value: '12', label: 'Active Ministry Teams' },
-  { value: '38', label: 'Outreach Initiatives' },
-  { value: '91%', label: 'Mission Funds Deployed' },
+  { value: '5', label: 'Weekly Prayer Meetings' },
+  { value: '8', label: 'Discipleship Groups' },
+  { value: '320+', label: 'Bible Study Participation' },
+  { value: '60+', label: 'Ministry Volunteers' },
 ]
 
 export default function About() {
@@ -17,9 +39,9 @@ export default function About() {
             <i className="fas fa-church text-[10px]" aria-hidden="true"></i>
             About Mwariki Baptist
           </span>
-          <h2 className="section-title mt-5">Biblical Faith. Accountable Leadership. Community Impact.</h2>
+          <h2 className="section-title mt-5">Rooted in Scripture, Growing in Christ</h2>
           <p className="section-subtitle">
-            We are a Christ-centered church shaping faithful disciples, strengthening families, and serving the community with measurable compassion.
+            We are a Christ-centered church devoted to God&apos;s Word, faithful prayer, biblical fellowship, and lifelong discipleship.
           </p>
         </div>
 
@@ -35,23 +57,26 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-black/10"></div>
 
               <div className="absolute left-5 right-5 md:left-8 md:right-8 bottom-8">
-                <p className="chip bg-white/90 border-primary/30 text-warning">Mission and Identity</p>
+                <p className="chip bg-white/90 border-primary/30 text-warning">Biblical Foundation</p>
                 <h3 className="font-serif text-white text-2xl md:text-4xl font-bold mt-4 leading-tight">
-                  Worshiping Christ. Forming Disciples. Serving Community.
+                  Worshiping God, Making Disciples, and Living the Gospel
                 </h3>
                 <p className="text-white/90 mt-3 text-sm md:text-base leading-relaxed max-w-prose">
-                  Our church family is built on biblical teaching, prayerful leadership, and practical service that transforms lives over time.
+                  Our church life is shaped by biblical preaching, earnest prayer, spiritual formation, and gospel witness in everyday life.
                 </p>
               </div>
             </article>
 
             <article className="xl:col-span-5 p-7 md:p-9 bg-surface">
-              <h3 className="font-serif text-3xl text-ink font-bold">Why People Trust Mwariki Baptist</h3>
-              <div className="mt-6 space-y-4">
-                {leadershipHighlights.map((item) => (
+              <h3 className="font-serif text-3xl text-ink font-bold">Our Core Beliefs</h3>
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {coreBeliefs.map((item) => (
                   <div key={item.title} className="rounded-2xl border border-borderSoft bg-surfaceAlt p-4">
-                    <h4 className="text-base font-bold text-ink">{item.title}</h4>
-                    <p className="text-sm text-muted mt-1 leading-relaxed">{item.text}</p>
+                    <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-3">
+                      <i className={`fas ${item.icon}`} aria-hidden="true"></i>
+                    </div>
+                    <h4 className="text-base font-bold text-ink leading-tight">{item.title}</h4>
+                    <p className="text-sm text-muted mt-2 leading-relaxed">{item.text}</p>
                   </div>
                 ))}
               </div>
