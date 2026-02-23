@@ -1,4 +1,4 @@
-Christian Church - React + Vite + Tailwind
+Mwariki Baptist - React + Vite + Tailwind
 
 Quick start:
 1. unzip the project
